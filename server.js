@@ -28,7 +28,7 @@ app.use(morgan("dev"));
 app.use(cors());
 
 // Set static folder
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Mount routers
 app.use("/api/v1/todos", todos);
